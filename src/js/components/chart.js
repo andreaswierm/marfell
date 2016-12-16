@@ -13,7 +13,7 @@ define(function() {
       return scope;
     },
 
-    afterRender: function(scope) {
+    afterRender: function(scope, element) {
 
     }
   }

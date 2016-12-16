@@ -1,12 +1,13 @@
 define(['helper/interpolate'], function(interpolate) {
-  return function(componentDefinition, scope) {
-    var state = componentDefinition.state(scope);
-    var template = document.getElementById(componentDefinition.templateId).innerHTML;
+  return function(componentDefinition, elementId, scope) {
+    var state = componentDefinition.state(scope),
+        template = document.getElementById(componentDefinition.templateId).innerHTML,
+        element = document.getElementById(elementId);
 
-    var endTemplate = interpolate(template, state);
+    element.innerHTML = interpolate(template, state);
 
-    componentDefinition.afterRender(scope);
-
-    return endTemplate;
+    setTimeout(function() {
+      componentDefinition.afterRender(scope, element);
+    });
   }
 });

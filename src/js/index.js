@@ -14,17 +14,14 @@ require([
     ]).then(function(results) {
       var impressions = results[0],
           revenue = results[1],
-          visits = results[2],
-          impressionsContainer = document.getElementById('impressions-chart'),
-          revenueContainer = document.getElementById('revenue-chart'),
-          visitsContainer = document.getElementById('visits-chart');
+          visits = results[2];
 
       impressions.type = 'Impressions';
       revenue.type = 'Revenue';
       visits.type = 'Visits';
 
-      impressionsContainer.innerHTML = render(chart, impressions);
-      revenueContainer.innerHTML = render(chart, revenue);
-      visitsContainer.innerHTML = render(chart, visits);
+      render(chart, 'impressions-chart', impressions);
+      render(chart, 'revenue-chart', revenue);
+      render(chart, 'visits-chart', visits);
     });
 });
