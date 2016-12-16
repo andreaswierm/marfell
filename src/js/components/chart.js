@@ -1,4 +1,4 @@
-define(function() {
+define(['highcharts'], function(highcharts) {
   function getPercentage(number, total) {
     return Math.floor((number / total) * 100);
   }
@@ -17,4 +17,4 @@ define(function() {
 
     }
   }
-})
+});
