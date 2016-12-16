@@ -1,0 +1,23 @@
+.ch-primary {
+  color: #666666;
+}
+
+.ch-secondary {
+  color: #B4B4B4;
+}
+
+.ch-redContainer .ch-container-primary {
+  color: #F7CF38;
+}
+
+.ch-redContainer .ch-container-secondary {
+  color: #D8631F;
+}
+
+.ch-greenContainer .ch-container-primary {
+  color: #13CCE5;
+}
+
+.ch-greenContainer .ch-container-secondary {
+  color: #005365;
+}

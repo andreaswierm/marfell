@@ -5,18 +5,39 @@
 
     <script data-main="/js/index.js" src="/vendor/require.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/utility.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/typography.css">
   </head>
   <body>
     <div class="ch-chart-container">
-      <div id="impressions-chart"></div>
-      <div id="revenue-chart"></div>
-      <div id="visits-chart"></div>
+      <div id="impressions-chart" class="ch-redContainer"></div>
+      <div id="revenue-chart" class="ch-redContainer"></div>
+      <div id="visits-chart" class="ch-greenContainer"></div>
     </div>
 
     <script type="text/plain" id="chart-template">
-      <div>
-        Im the {{total}}
+      <div class="ch-chart-item">
+        <div class="ch-chart-item-stack">
+          <span class="ch-container-primary ch-fontBold">Tablet</span>
+
+          <div>
+            <strong class="ch-primary">60%</strong>
+
+            <span class="ch-secondary">{{tablet}}</span>
+          </div>
+        </div>
+
+        <div class="ch-chart-item-stack ch-utility-alignRight">
+          <span class="ch-container-secondary ch-fontBold">Smartphone</span>
+
+          <div>
+            <strong class="ch-primary">60%</strong>
+
+            <span class="ch-secondary">{{smartphone}}</span>
+          </div>
+        </div>
       </div>
     </script>
   </body>
