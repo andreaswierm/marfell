@@ -19,6 +19,10 @@ require([
           revenueContainer = document.getElementById('revenue-chart'),
           visitsContainer = document.getElementById('visits-chart');
 
+      impressions.type = 'Impressions';
+      revenue.type = 'Revenue';
+      visits.type = 'Visits';
+
       impressionsContainer.innerHTML = render(chart, impressions);
       revenueContainer.innerHTML = render(chart, revenue);
       visitsContainer.innerHTML = render(chart, visits);
