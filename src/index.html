@@ -2,8 +2,22 @@
 <html>
   <head>
     <title>Chart View</title>
+
+    <script data-main="/js/index.js" src="/vendor/require.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
-    I'm here!
+    <div class="ch-chart-container">
+      <div id="impressions-chart"></div>
+      <div id="revenue-chart"></div>
+      <div id="visits-chart"></div>
+    </div>
+
+    <script type="text/plain" id="chart-template">
+      <div>
+        Im the {{total}}
+      </div>
+    </script>
   </body>
 </html>

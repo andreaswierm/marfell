@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "development": "http-server src -p 8080",
+    "development": "http-server src -p 8080 -c-1",
     "api-mock": "node api-mock"
   },
   "author": "Andreas Wiermann Casas",
