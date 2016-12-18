@@ -16,8 +16,8 @@ app.get('/revenue', function(req, res) {
 app.get('/impressions', function(req, res) {
   res.json({
     total: 50000000,
-    smartphone: 20000000,
-    tablet: 30000000
+    smartphone: 30000000,
+    tablet: 20000000
   });
 });
 

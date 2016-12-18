@@ -13,17 +13,30 @@ body {
 
 .ch-chart-item {
   display: flex;
+  flex-direction: column;
+}
+
+.ch-chart-itemData {
+  display: flex;
   justify-content: space-between;
   padding: 12px 0;
   border-bottom: 1px solid #B4B4B4;
 }
 
-.ch-chart-item-stack {
+.ch-chart-itemData-stack {
   margin-right: 40px;
 }
 
-.ch-chart-item > .ch-chart-item-stack:last-child {
+.ch-chart-itemData > .ch-chart-itemData-stack:last-child {
   margin-right: 0;
+}
+
+.radiusChartContainer {
+  text-align: center;
+}
+
+.radiusChartContainer > .highcharts-container  {
+  display: inline-block;
 }
 
 @media screen and (max-width: 480px) {

@@ -7,17 +7,25 @@
 }
 
 .ch-redContainer .ch-container-primary {
-  color: #F7CF38;
+  color: #FEC404;
 }
 
 .ch-redContainer .ch-container-secondary {
-  color: #D8631F;
+  color: #DA5C17;
 }
 
 .ch-greenContainer .ch-container-primary {
-  color: #13CCE5;
+  color: #56D731;
 }
 
 .ch-greenContainer .ch-container-secondary {
-  color: #005365;
+  color: #016A01;
+}
+
+.ch-blueContainer .ch-container-primary {
+  color: #08CCE5;
+}
+
+.ch-blueContainer .ch-container-secondary {
+  color: #045268;
 }

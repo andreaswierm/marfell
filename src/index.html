@@ -10,30 +10,33 @@
   </head>
   <body>
     <div class="ch-chart-container">
-      <div id="impressions-chart" class="ch-redContainer"></div>
-      <div id="revenue-chart" class="ch-redContainer"></div>
-      <div id="visits-chart" class="ch-greenContainer"></div>
+      <div id="revenue-chart" class="ch-greenContainer"></div>
+      <div id="impressions-chart" class="ch-blueContainer"></div>
+      <div id="visits-chart" class="ch-redContainer"></div>
     </div>
 
     <script type="text/plain" id="chart-template">
       <div class="ch-chart-item">
-        <div class="ch-chart-item-stack">
-          <span class="ch-container-primary ch-fontBold">Tablet</span>
+        <div class="radiusChartContainer"></div>
+        <div class="ch-chart-itemData">
+          <div class="ch-chart-itemData-stack">
+            <span class="ch-container-primary ch-fontBold">Tablet</span>
 
-          <div>
-            <strong class="ch-primary">{{tabletShare}}%</strong>
+            <div>
+              <strong class="ch-primary">{{tabletShare}}%</strong>
 
-            <span class="ch-secondary">{{tablet}}</span>
+              <span class="ch-secondary">{{tablet}}</span>
+            </div>
           </div>
-        </div>
 
-        <div class="ch-chart-item-stack ch-utility-alignRight">
-          <span class="ch-container-secondary ch-fontBold">Smartphone</span>
+          <div class="ch-chart-itemData-stack ch-utility-alignRight">
+            <span class="ch-container-secondary ch-fontBold">Smartphone</span>
 
-          <div>
-            <strong class="ch-primary">{{smartphoneShare}}%</strong>
+            <div>
+              <strong class="ch-primary">{{smartphoneShare}}%</strong>
 
-            <span class="ch-secondary">{{smartphone}}</span>
+              <span class="ch-secondary">{{smartphone}}</span>
+            </div>
           </div>
         </div>
       </div>
